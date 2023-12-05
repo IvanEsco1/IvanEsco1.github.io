@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>TJC</title>
+</head>
+<body>
+  <div class="circulo-decoracion">
+  </div>
+  <div class="circulo-decoracion2">........ <br>........ <br>........</div>
+  
+
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="img/logo-color--negro.png" alt="logo">
+      </a>
+      <ul class="links">
+        <li>
+          <a href="#"> <i class="fa-solid fa-horse-head"></i>
+            Carreras
+          </a>
+        </li>
+
+        <li>
+          <a href="#"> <i class="fa-solid fa-basketball"></i>
+            Deportes
+          </a>
+        </li>
+      </ul>
+
+      <div class="registro">     
+        <a href="" class="action_btn">Registrarse</a>
+        <div class="toggle_btn open">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="moneda">
+        <i class="fa-solid fa-globe"></i>
+        <div class="vl"></div>
+        <span> BS VEN</span>
+      </div>
+
+    </nav>
+
+    <div class="dropdown_menu">
+      <li>
+        <a href="#"> <i class="fa-solid fa-horse-head"></i>
+          Carreras
+        </a>
+      </li>
+
+      <li>
+        <a href="#"> <i class="fa-solid fa-basketball"></i>
+          Deportes
+        </a>
+      </li>
+
+      <li><a href="" class="action_btn">Registrarse</a></li>
+
+    </div>  
+  </header>
+
+  <main class="login-container">
+    <div class="partes-container">
+      <div class="primera-parte">
+        <div class="login-wrap">
+          <img src="img/logo-color--negro.png" alt="">
+        </div>
+      </div>
+
+      <div class="segunda-parte">
+        <h1>Iniciar Sesión</h1>
+
+        <form action="" class="formulario-login">
+          <input type="text" name="" id="" placeholder="Usuario">
+          <input type="password" name="" id="" placeholder="Contraseña">
+          <a href="#">Recuperar contraseña</a>
+          <button type="submit">ENTRAR</button>
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-texto">
+      © 2023 TUS JUGADAS.COM. TODOS LOS DERECHOS RESERVADOS
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector(".toggle_btn")
+    const toggleBtnIcon = document.querySelector(".toggle_btn i")
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+
+  </script>
+
+</body>
+</html>

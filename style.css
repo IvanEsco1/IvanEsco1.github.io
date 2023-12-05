@@ -1,0 +1,532 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+
+body {
+  height: 90vh;
+  background-color: #e1e1e0;
+  background-image: url(./img/fotbilista-cirlulos-verde.png);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position-x: 20%;
+  background-position-y: 60px;
+  position: relative;
+}
+
+.circulo-decoracion {
+  width: 230px;
+  height: 230px;
+  background-color: #1f6d3a;
+  position: absolute;
+  border-radius: 100%;
+  top: 650px;
+  right: 40%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.circulo-decoracion2 {
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  right: 80%;
+  top: 600px;
+  z-index: -1;
+
+  color: #408b5a;
+  letter-spacing: 20px;
+  font-size: 40px;
+  line-height: 30px;
+  user-select: none;
+  overflow: hidden;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+a:hover{
+  color: #336b7a;
+}
+
+/* -------      HEADER      --------- */
+
+header {
+  position: relative;
+  padding-right: 2rem;
+  background-color: #5da576;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  /* max-width: 1800px; */
+  gap: 40px;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  height: 80px;
+  width: 340px;
+  background-color: #1a5c6e;
+  justify-content: center;
+  display: flex;
+}
+
+.navbar .logo img{
+  width: 260px;
+  padding: 10px;
+  filter: invert();
+}
+
+.navbar .logo img:hover{
+  scale: 1.05;
+}
+
+.navbar .links {
+  display: flex;
+  width: 60%;
+  gap: 2rem;
+}
+
+.navbar .links a {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .links a:hover {
+  background-color: rgba(26, 110, 89, 0.259);
+  border-radius: 10px;
+  color: #fff;
+  scale: 1.05;
+}
+
+.registro {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  background-color: #1a5c6e;
+  border-radius: 5px;
+}
+
+.navbar .toggle_btn:hover{
+  scale: 1.05;
+}
+
+.navbar .toggle_btn i{
+  overflow: hidden;
+  font-size: 1.8rem;
+  background-color: #1a5c6e;
+}
+
+.action_btn {
+  background-color: #151716;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
+
+.action_btn:hover{
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+.moneda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 220px;
+  color: #fff;
+}
+
+.vl {
+  border-left: 1px solid #fff;
+  height: 40px;
+}
+/*  */
+/*  */
+/*  */
+
+
+/* DROPDOWN MENU */
+.dropdown_menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 80px;
+  width: 300px;
+  height: 0px;
+  background: #5da576;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 180px;
+  /* border-top: 1px solid #1a6e4049; */
+
+  /* Test */
+  /* position: relative; */
+  /* top: 0; */
+  /*  */
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu a:hover {
+  color: #fff;
+  scale: 1.05;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* LOGIN */
+
+.login-container {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 50px 50px;
+  /* background-color: #292929; */
+}
+
+.partes-container{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.primera-parte{
+  height: 50%;
+  background: linear-gradient(to top, #5da576, #1a5c6e);
+}
+
+.login-wrap {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.login-wrap img{
+  /* min-width: 65%; */
+  /* max-width: 70%; */
+  /* max-width: 400px;
+  min-width: 200px; */
+  max-width: 400px;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/* formulario */
+
+.segunda-parte{
+  height: 50%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.segunda-parte h1{
+  font-size: 28px;
+  padding: 10px;
+  font-weight: 800;
+  color: #1a5c6e;
+}
+
+
+.formulario-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 20px;
+}
+
+.formulario-login input{
+  min-width: 300px;
+  max-width: 350;
+  height: 40px;
+  background-color: #5da576;
+  padding: 5px 30px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+
+  transition: ease-in 0.6s;
+
+  border: solid 0px #1a5c6e;
+  border-radius: 30px;
+}
+
+.formulario-login input::placeholder{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.formulario-login input:focus{
+  outline-color: #fff;
+  transform: scale(1.05);
+  transition: all 0.5s;
+  background-color: #408b5a;
+}
+
+.formulario-login a{
+  text-decoration: none;
+  color: #1a5c6e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.formulario-login a:hover{
+  scale: 1.02;
+}
+
+.formulario-login button{
+  background-color: #1a5c6e;
+  color: #fff;
+  font-size: 20px;
+
+  cursor: pointer;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.formulario-login button:hover{
+  scale: 1.05;
+  color: #fff;
+}
+
+.formulario-login button:active {
+  scale: 0.95;
+}
+
+.footer {
+  background-color: #151716;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.8rem;
+  color: #fff;
+  height: 100px;
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    body {
+    height: 90vh;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 60px;
+    }
+
+    .circulo-decoracion {
+      width: 200px;
+      height: 200px;
+      top: 650px;
+      right: 20%;
+    }
+
+    .navbar .links, 
+    .navbar .action_btn {
+      display: none;
+    }
+
+    .navbar .toggle_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* padding-right: 5%; */
+    }
+
+    .navbar .registro {
+      order: 2;
+      width: auto;
+    }
+
+    .navbar .moneda {
+      order: 1;
+      justify-content: end;
+      width: 100%;
+      gap: 10px;
+    }
+
+    .dropdown_menu {
+      display: block;
+    }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+
+  .circulo-decoracion2 {
+    display: none;
+  }
+
+  .dropdown_menu {
+    left: 0rem;
+    width: 100%;
+    }
+
+  .navbar .logo {
+    min-width: 240px;
+     max-width: 260px;
+  }
+
+  .navbar .logo img{
+    min-width: 220px;
+  }
+  
+  .navbar .moneda {
+    display: none;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 50px;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .circulo-decoracion {
+    width: 150px;
+    height: 150px;
+    top: 80vh;
+    right: 0%;
+  }
+
+  .navbar .logo {
+    min-width: 220px;
+    max-width: 260px;
+  }
+
+  .navbar .logo img{
+    width: 160px;
+  }
+  
+  .login-wrap img{
+    min-width: 250px;
+    padding: 16px;
+  }
+  
+  /* formulario */
+  
+  .segunda-parte h1{
+    font-size: 24px;
+  }
+  
+  
+  .formulario-login {
+    gap: 20px;
+  }
+  
+  .formulario-login input{
+    min-width: 180px;
+    padding: 5px 10px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .formulario-login input::placeholder{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 20px;
+  }
+  
+  .formulario-login input:focus{
+    outline-color: #fff;
+    transform: scale(1.05);
+    transition: all 0.5s;
+    background-color: #408b5a;
+  }
+  
+  .formulario-login a{
+    text-decoration: none;
+    color: #1a5c6e;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .formulario-login button{
+    background-color: #1a5c6e;
+    color: #fff;
+    font-size: 18px;
+  
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0px;
+  }
+}
+
+
+
+
