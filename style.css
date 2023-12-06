@@ -254,6 +254,32 @@ header {
 .primera-parte{
   height: 50%;
   background: linear-gradient(to top, #5da576, #1a5c6e);
+  position: relative;
+}
+
+.decoracion-clip-abajo {
+  background-color: #5da576;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+
+  background: linear-gradient(to top, #64b680, #1a5c6e);
+  height: 100%;
+  width: 90%;
+  clip-path: ellipse(52% 47% at 86% 91%);
+
+}
+
+.decoracion-clip-arriba {
+  background-color: #5da576;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background: linear-gradient(to top, #68bd84, #1a5c6e);
+  height: 90%;
+  width: 80%;
+  clip-path: ellipse(80% 34% at 0% 0%);
 }
 
 .login-wrap {
@@ -262,6 +288,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 50px 50px;
+
 }
 
 .login-wrap img{
@@ -273,6 +300,7 @@ header {
   min-width: 300px;
   padding: 20px;
   background-color: #fff;
+  z-index: 4;
   border-radius: 20px;
 }
 
