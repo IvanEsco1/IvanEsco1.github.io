@@ -7,7 +7,7 @@
 
 body {
   min-height: 100vh;
-  background-color: #e1e1e0;
+  background-color: rgb(232, 237, 244);
   background-image: url(./img/fotbilista-cirlulos-verde.png);
   background-size: 600px;
   background-repeat: no-repeat;
@@ -99,7 +99,8 @@ header {
 
 .navbar .links {
   display: flex;
-  width: 50%;
+  min-width: 40%;
+  max-width: 70%;
   gap: 2rem;
 }
 
@@ -155,7 +156,7 @@ header {
   border: none;
   border-radius: 10px;
   outline: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
   transition: scale 0.2s ease;
@@ -200,10 +201,11 @@ header {
   border-radius: 0 0 10px 10px;
   overflow: hidden;
   transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10;
 }
 
 .dropdown_menu.open {
-  height: 180px;
+  height: 240px;
   /* border-top: 1px solid #1a6e4049; */
 
   /* Test */
@@ -253,7 +255,7 @@ header {
 
 .primera-parte{
   height: 50%;
-  background: linear-gradient(to top, #5da576, #1a5c6e);
+  background: linear-gradient(to top, #00A774, #1a5c6e);
   position: relative;
 }
 
@@ -263,7 +265,7 @@ header {
   bottom: 0px;
   right: 0;
 
-  background: linear-gradient(to top, #64b680, #1a5c6e);
+  background: linear-gradient(to top, rgb(40, 161, 124), rgb(60, 161, 130));
   height: 100%;
   width: 90%;
   clip-path: ellipse(52% 47% at 86% 91%);
@@ -276,7 +278,7 @@ header {
   left: 0;
   top: 0;
 
-  background: linear-gradient(to top, #68bd84, #1a5c6e);
+  background: linear-gradient(to top, #68bd84, #1c5d6f);
   height: 90%;
   width: 80%;
   clip-path: ellipse(80% 34% at 0% 0%);
@@ -406,6 +408,37 @@ header {
 
 
 /* RESPONSIVE */
+@media (max-width: 1250px) {
+  .navbar .links, 
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* padding-right: 5%; */
+  }
+
+  .navbar .registro {
+    order: 2;
+    width: auto;
+  }
+
+  .navbar .moneda {
+    order: 1;
+    justify-content: end;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+}
+
 @media (max-width: 992px) {
     body {
     height: 90vh;
@@ -422,34 +455,7 @@ header {
       right: 20%;
     }
 
-    .navbar .links, 
-    .navbar .action_btn {
-      display: none;
-    }
 
-    .navbar .toggle_btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      /* padding-right: 5%; */
-    }
-
-    .navbar .registro {
-      order: 2;
-      width: auto;
-    }
-
-    .navbar .moneda {
-      order: 1;
-      justify-content: end;
-      width: 100%;
-      gap: 10px;
-    }
-
-    .dropdown_menu {
-      display: block;
-    }
 }
 
 @media (max-width: 768px) {
