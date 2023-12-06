@@ -99,12 +99,12 @@ header {
 
 .navbar .links {
   display: flex;
-  width: 60%;
+  width: 50%;
   gap: 2rem;
 }
 
 .navbar .links a {
-  width: 150px;
+  width: 180px;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -697,6 +697,38 @@ header {
   background-position-y: 60px;
   }
 
+
+  .navbar {
+    height: 120px;
+    gap: 80px;
+  }
+
+  .navbar a {
+    font-size: 1.6rem;
+  }
+
+  .navbar .logo {
+    height: 120px;
+    width: 500px;
+  }
+  
+  .navbar .logo img{
+    width: 360px;
+    padding: 16px;
+
+  }
+
+  .navbar .links {
+    gap: 6rem;
+  }
+
+  .moneda {
+    gap: 20px;
+    width: 280px;
+    font-size: 1.4rem;
+  }
+  
+
   .circulo-decoracion {
     width: 350px;
     height: 350px;
@@ -716,9 +748,6 @@ header {
     line-height: 30px;
   }
 
-  a {
-    font-size: 1.3rem;
-  }
 
   .login-container {
     width: 90vw;
