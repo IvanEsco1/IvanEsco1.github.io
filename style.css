@@ -53,7 +53,7 @@ li {
 a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 a:hover{
@@ -433,6 +433,40 @@ header {
     display: none;
   }
 
+  .segunda-parte h1{
+    font-size: 22px;
+  }
+  
+  
+  .formulario-login {
+    gap: 24px;
+  }
+  
+  .formulario-login input{
+    min-width: 280px;
+    height: 40px;
+    padding: 3px 8px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+
+
+  .formulario-login input::placeholder{
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  
+  
+  .formulario-login a{
+    font-size: 18px;
+  }
+  
+  .formulario-login button{
+    font-size: 20px;
+  
+  }
+
   .dropdown_menu {
     left: 0rem;
     width: 100%;
@@ -491,39 +525,26 @@ header {
   /* formulario */
   
   .segunda-parte h1{
-    font-size: 24px;
+    font-size: 22px;
   }
   
-  
-  .formulario-login {
-    gap: 20px;
-  }
   
   .formulario-login input{
-    min-width: 180px;
+    min-width: 220px;
     padding: 5px 10px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
   }
   
   .formulario-login input::placeholder{
-    color: #fff;
-    font-size: 22px;
-    font-weight: 500;
-    padding-left: 20px;
+    font-size: 18px;
   }
   
-  .formulario-login input:focus{
-    outline-color: #fff;
-    transform: scale(1.05);
-    transition: all 0.5s;
-    background-color: #408b5a;
-  }
   
   .formulario-login a{
     text-decoration: none;
     color: #1a5c6e;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
   }
   
@@ -639,5 +660,110 @@ header {
 
 }
 
+@media (min-width: 1960px) {
+  body {
+  height: 100vh;
+  background-size: 900px;
+  background-repeat: no-repeat;
+  background-position-x: 20%;
+  background-position-y: 60px;
+  }
 
+  .circulo-decoracion {
+    width: 350px;
+    height: 350px;
+    top: 70%;
+    right: 20%;
+  }
+
+  .circulo-decoracion2 {
+    width: 280px;
+    height: 100px;
+
+    right: 85%;
+    top: 900px;
+  
+    letter-spacing: 20px;
+    font-size: 50px;
+    line-height: 30px;
+  }
+
+  a {
+    font-size: 1.3rem;
+  }
+
+  .login-container {
+    width: 90vw;
+    max-height: 1400px;
+    min-height: 1000px;
+    padding: 50px 50px;
+    /* background-color: #292929; */
+  }
+  
+  .partes-container{
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+    width: 550px;
+    border-radius: 10px;
+  }
+  
+  
+  .login-wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+  }
+  
+  .login-wrap img{
+    max-width: 500px;
+    min-width: 400px;
+  }
+  
+  /* formulario */
+  
+  .segunda-parte{
+    height: 50%;
+  }
+  
+  .segunda-parte h1{
+    margin: 15px 0;
+    font-size: 30px;
+    padding: 20px;
+  }
+  
+  
+  .formulario-login {
+    gap: 30px;
+  }
+  
+  .formulario-login input{
+    min-width: 350px;
+    max-width: 400px;
+    height: 50px;
+    font-size: 26px;
+  }
+  
+
+  
+  .formulario-login a{
+    font-size: 22px;
+  }
+  
+  .formulario-login a:hover{
+    scale: 1.02;
+  }
+  
+  .formulario-login button{
+    background-color: #1a5c6e;
+    color: #fff;
+    font-size: 24px;
+  
+    padding: 14px 40px;
+  }
+  
+
+}
 
