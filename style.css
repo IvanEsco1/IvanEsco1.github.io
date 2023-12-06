@@ -234,7 +234,8 @@ header {
 .login-container {
   display: flex;
   justify-content: end;
-  width: 100%;
+  width: 90vw;
+  max-height: 1000px;
   padding: 50px 50px;
   /* background-color: #292929; */
 }
@@ -363,10 +364,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   font-size: 0.8rem;
   color: #fff;
-  height: 100px;
+  height: 150px;
 }
 
 
@@ -527,6 +529,95 @@ header {
   }
 }
 
+@media (max-width: 350px) {
+  .circulo-decoracion {
+    width: 150px;
+    height: 150px;
+    top: 80vh;
+    right: 0%;
+  }
+
+  header {
+    background-color: #1a5c6e;
+    padding-right: 10px;
+  }
+
+  .navbar .toggle_btn {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    background-color: #5da576;
+    border-radius: 5px;
+  }
+
+  .navbar .toggle_btn i{
+    background-color: #5da576;
+  }
+
+  .navbar .logo {
+    min-width: 180px;
+    max-width: 280px;
+  }
+  
+  .login-wrap img{
+    min-width: 170px;
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+  
+  .primera-parte{
+    height: 50%;
+  }
+
+  .login-wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+  }
+
+  /* formulario */
+  
+  .segunda-parte h1{
+    font-size: 20px;
+  }
+  
+  
+  .formulario-login {
+    gap: 24px;
+  }
+  
+  .formulario-login input{
+    min-width: 120px;
+    height: 30px;
+    padding: 3px 8px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+
+
+  .formulario-login input::placeholder{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 20px;
+  }
+  
+  
+  .formulario-login a{
+    font-size: 16px;
+  }
+  
+  .formulario-login button{
+    font-size: 16px;
+  
+    padding: 8px 16px;
+    border-radius: 10px;
+  }
+
+}
 
 
 
